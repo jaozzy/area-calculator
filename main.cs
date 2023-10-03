@@ -58,11 +58,11 @@ class Program {
                     formaG.Nome = "Quadrado";
                     formaG.Lado = lado;
                     area = formaG.Area();
-                    Console.Write("A área do '" +  formaG.Nome +"' é: " + area);
+                    Console.WriteLine("A área do '" +  formaG.Nome +"' é: " + area);
                 }
 
                 catch (FormatException) {
-                    Console.Write("O formato de entrada é inválido! Digite um número decimal ou inteiro.");
+                    Console.WriteLine("O formato de entrada é inválido! Digite um número decimal ou inteiro.");
                 }
 
                 break;
@@ -80,11 +80,12 @@ class Program {
                 formaG.Base = Base;
                 formaG.Altura = Altura;
                 area = formaG.Area();
-                Console.Write("A área do '" +  formaG.Nome +"' é: " + area);
+                Console.WriteLine("A área do '" +  formaG.Nome +"' é: " + area);
                 }
                 
+                
                 catch (FormatException) {
-                    Console.Write("O formato de entrada é inválido! Digite um número decimal ou inteiro.");
+                    Console.WriteLine("O formato de entrada é inválido! Digite um número decimal ou inteiro.");
                 } 
 
                 break;
@@ -101,11 +102,11 @@ class Program {
                     formaG.Altura = Altura;
                     formaG.Base = Base;
                     area = formaG.Area();
-                    Console.Write("A área do '" +  formaG.Nome +"' é: " + area);
+                    Console.WriteLine("A área do '" +  formaG.Nome +"' é: " + area);
                 }
 
                 catch (FormatException) {
-                    Console.Write("O formato de entrada é inválido! Digite um número decimal ou inteiro.");
+                    Console.WriteLine("O formato de entrada é inválido! Digite um número decimal ou inteiro.");
                 }
 
                 break;
@@ -119,11 +120,11 @@ class Program {
                     formaG.Nome = "Círculo";
                     formaG.Raio = Raio;
                     area = formaG.Area();
-                    Console.Write("A área do '" +  formaG.Nome +"' é: " + area);
+                    Console.WriteLine("A área do '" +  formaG.Nome +"' é: " + area);
                 }
 
                 catch (FormatException) {
-                    Console.Write("O formato de entrada é inválido! Digite um número decimal ou inteiro.");
+                    Console.WriteLine("O formato de entrada é inválido! Digite um número decimal ou inteiro.");
                 }
 
                 break;
@@ -133,6 +134,9 @@ class Program {
                 break;
 
         }
+
+        Console.Write("Pressione qualquer tecla para sair...        ");
+        Console.ReadKey();
 
     }
 }
